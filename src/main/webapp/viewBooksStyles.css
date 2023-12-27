@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/* Estilo base para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid rgb(255, 255, 255);
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 200px; /* Defina o tamanho máximo para a largura da célula */
+    overflow: hidden; /* Oculta o conteúdo que excede a largura */
+    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar texto oculto */
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+th {
+    background-color: rgb(26, 95, 180);
+    color: white;
+    text-align: left;
+}
+
+/* Efeito hover e cores alternadas para as linhas */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+a {
+    text-decoration: none;
+    /* Adicione outros estilos desejados */
+    color: #333; /* Alterando a cor do texto do link */
+    font-weight: bold; /* Alterando o peso da fonte do link */
+    /* Adicione mais estilos conforme necessário */
+}
+
+
+
+
+/* Estilo base para o formulário */
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* Cor de fundo */
+    border-radius: 15px; /* Borda arredondada */
+    border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+   /*font-family: 'Roboto', sans-serif;*/ /* Fonte */
+}
+
+/* Estilos para os labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilos para os inputs e textarea */
+input[type="text"],
+textarea,
+input[type="date"],
+input[type="number"] {
+    width: calc(100% - 20px); /* Ajuste para compensar o padding */
+    padding: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-bottom: 10px;
+  /*font-family: 'Roboto', sans-serif;*/ /* Fonte */
+}
+
+/* Estilos para os botões */
+input[type="submit"] {
+    background-color: rgb(26, 95, 180);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    /*font-family: 'Roboto', sans-serif;*/ /* Fonte */ 
+}
+
+input[type="submit"]:hover {
+    background-color: #1a5fb4;
+    transition: background-color 0.3s ease;
+   
+}
+
+/* Restante do seu CSS permanece igual */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+body{
+	font-family: 'Roboto', 'sans-serif';
+}
+
+.titulo-formulario{
+	text-align: left;
+	padding: 0.5%;
+	color: rgb(26, 95, 180);
+	font-weight: bold;
+}
+
+/* Top menu tabela livros*/
+
+body, ul {
+  margin: 0;
+  padding: 0;
+
+}
+
+.top-menu {
+  background-color: #1a5fb4; /* Cor de fundo do menu */
+}
+
+.top-menu ul {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Exibe os itens em linha */
+}
+
+.top-menu ul li {
+  float: right; /* Flutua os itens para a esquerda */
+  margin-right: 5px; /* Espaçamento entre os itens */
+  
+}
+
+.top-menu ul li a {
+  color: white; /* Cor do texto do link */
+  text-decoration: none; /* Remove sublinhado padrão do link */
+  padding: 10px; /* Espaçamento interno */
+  display: inline-block; /* Permite espaçamento entre os itens */
+}
+
+.top-menu ul li a:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+
+
+
+
+/* Estilos para o formulário de cadastro de livro */
+
+.add-form {
+    width: 50%;
+    margin: 50px auto; /* Espaçamento superior */
+    padding: 20px;
+    background-color: #f5f5f5; /* Cor de fundo */
+    border-radius: 15px; /* Borda arredondada */
+    border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex; /* Exibe como flex container */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items:  flex; /* Centraliza horizontalmente */
+}
+
+
+/* Estilos para os labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilos para os inputs e textarea */
+input[type="text"],
+textarea,
+input[type="date"],
+input[type="number"],
+select {
+    width: calc(100% - 20px); /* Ajuste para compensar o padding */
+    padding: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; /* Fonte */
+}
+
+/* Estilos para os botões */
+input[type="submit"] {
+    background-color: rgb(26, 95, 180);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Fonte */
+}
+
+input[type="submit"]:hover {
+    background-color: #1a5fb4;
+    transition: background-color 0.3s ease;
+}
+
+/* Restante do seu CSS permanece igual */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.titulo-addform {
+    text-align: left !important;
+    padding: 0.5%;
+    color: rgb(26, 95, 180);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
